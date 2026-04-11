@@ -81,6 +81,23 @@
     margin-bottom: 2rem;
   }
 
+  .hero h1 .highlight {
+    position: relative;
+    display: inline;
+  }
+
+  .hero h1 .highlight::before {
+    content: '';
+    position: absolute;
+    background: var(--accent);
+    inset: 0.05em -0.08em;
+    z-index: -1;
+  }
+
+  .hero h1 .highlight {
+    color: var(--bg);
+  }
+
   .hero p {
     font-size: clamp(1rem, 1.5vw, 1.125rem);
     line-height: 1.7;
@@ -244,7 +261,7 @@
 </header>
 
 <section class="hero">
-  <h1>Plurality</h1>
+  <h1><span class="highlight">be</span>Plurality</h1>
   <p>A solo software studio that builds and ships products across AI tooling, consumer apps, and growth infrastructure.</p>
 </section>
 
