@@ -81,21 +81,18 @@
     margin-bottom: 2rem;
   }
 
-  .hero h1 .highlight {
+  .highlight {
     position: relative;
     display: inline;
+    color: var(--bg);
   }
 
-  .hero h1 .highlight::before {
+  .highlight::before {
     content: '';
     position: absolute;
     background: var(--accent);
     inset: 0.05em -0.08em;
     z-index: -1;
-  }
-
-  .hero h1 .highlight {
-    color: var(--bg);
   }
 
 
@@ -167,23 +164,12 @@
     color: var(--accent);
   }
 
-  /* ═══ CAPABILITIES ═══ */
-  .cap-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-
-  .cap-item h3 {
+  /* ═══ APPROACH ═══ */
+  .approach-statement {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
     font-weight: 700;
-    font-size: 0.9375rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .cap-item p {
-    font-size: 0.8125rem;
-    line-height: 1.75;
-    color: var(--text-light);
+    letter-spacing: -0.02em;
+    line-height: 1.25;
   }
 
   /* ═══ CONTACT ═══ */
@@ -230,7 +216,6 @@
       gap: 0.5rem;
     }
     .project-desc { display: none; }
-    .cap-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -275,7 +260,7 @@
       </a>
     </li>
     <li class="project-item">
-      <a href="#" class="project-link">
+      <a href="https://x402-extract-api-production.up.railway.app" target="_blank" class="project-link">
         <div class="project-name">x402 Extract API</div>
         <div class="project-desc">A pay-per-call API that lets AI agents extract and process content from web pages.</div>
         <div class="project-status live">Deployed</div>
@@ -295,29 +280,19 @@
         <div class="project-status live">Live</div>
       </a>
     </li>
+    <li class="project-item">
+      <a href="https://fracture-one.vercel.app/" target="_blank" class="project-link">
+        <div class="project-name">Fracture</div>
+        <div class="project-desc">A rogue-like space game.</div>
+        <div class="project-status live">Live</div>
+      </a>
+    </li>
   </ul>
 </section>
 
 <section class="section">
-  <div class="section-title">Capabilities</div>
-  <div class="cap-grid">
-    <div class="cap-item">
-      <h3>Product Development</h3>
-      <p>Going from an idea to a shipped product in days, not months. Web, mobile, and API builds across the full stack.</p>
-    </div>
-    <div class="cap-item">
-      <h3>AI-Assisted Engineering</h3>
-      <p>Using Claude Code to ship faster without cutting corners on code quality or the things that matter in the product.</p>
-    </div>
-    <div class="cap-item">
-      <h3>Growth & Distribution</h3>
-      <p>Thinking about distribution from the start, not after the product is built. Channel strategy, paid acquisition, launch planning.</p>
-    </div>
-    <div class="cap-item">
-      <h3>API & Agent Tooling</h3>
-      <p>Building APIs and services that AI agents can find and use on their own, for the next generation of automated workflows.</p>
-    </div>
-  </div>
+  <div class="section-title">Approach</div>
+  <p class="approach-statement">Software is commoditized. <span class="highlight">Taste</span> is not.</p>
 </section>
 
 <section class="section" id="contact">
